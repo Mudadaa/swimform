@@ -8,9 +8,9 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/index.html');
 }   );
 //on sert toutes les ressources présents dans le dossier public
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 //on lance le serveur sur le port 5000
 app.listen(5000,()=>{
-    console.log('Server is running at port 3000');
+    console.log('Server is running at port 5000');
 }   );

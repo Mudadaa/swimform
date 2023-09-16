@@ -5,17 +5,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" id="favicon" href="/img/swimCara.gif" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@1,500&display=swap" rel="stylesheet">
   <title>SwimForm</title>
 </head>
 
 <body>
   <header>
-    <h1>Dans quel lac de France souhaiteriez-vous nager ?</h1>
+    <h1>Alors on nage ou bien ?</h1>
+    <section class="presentation">
+      <p>En petit groupe, ou en solo venez rencontrer d'autres régions et leurs lacs.</p>
+      <p>Les joies de la nage en eau libre vous attendent.</p>
+      <p>Pensez à prendre votre matos, et de quoi vous sustentez dans votre sac flottant. Parce que brasser de l'eau ça creuse !</p>
+    </section>
   </header>
+
+  <main>
+    <div class="formul">
+      <form method="get">
+        <label for="region-and-lakes"></label>
+        <select name="regions" id="">
+          <option value="blank">----Choisissez une Région----</option>
+          <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+          <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+          <option value="Bretagne">Bretagne</option>
+          <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+          <option value="Corse">Corse</option>
+          <option value="Grand Est">Grand Est</option>
+          <option value="Hauts-de-France">Hauts-de-France</option>
+          <option value="Île-de-France">Île-de-France</option>
+          <option value="Normandie">Normandie</option>
+          <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+          <option value="Occitanie">Occitanie</option>
+          <option value="Pays de la Loire">Pays de la Loire</option>
+          <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+        </select>
+        <select name="lakes" id="">
+          <option value="Lakes">-----Choisissez un Lac-----</option>
+          <option value="Annecy">Annecy</option>
+          <option value="Bourget">Bourget</option>
+          <option value="Musteflotte">Musteflotte</option>
+          <option value="Tortipouss">Tortipouss</option>
+        </select>
+        <input type="date" name="" id="dispo">
+        <input type="submit" value="Recherche">
+      </form>
+    </div>
+    <div class="nageur">
+      <img class="nageurLac" src="/img/nageurLac.JPG" alt="">
+    </div>
+  </main>
+
+  <footer>
+    <div class="copy">
+      <h2> © SwimForm. Tous droits réservés.</h2>
+    </div>
+  </footer>
+  <script src="./app/app.js"></script>
 </body>
-<main>
-  <form action="" method="post"></form>
-</main>
 
 </html>
