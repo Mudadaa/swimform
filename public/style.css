@@ -1,0 +1,14 @@
+body{
+    background-color: dodgerblue;
+    font-family: 'Ysabeau Office', sans-serif;
+    
+}
+
+h1{
+    color: azure;   
+background:teal;
+width: fit-content;
+border-radius: 2px;
+padding: 8px;
+box-shadow: 60px -16px grey;
+}
