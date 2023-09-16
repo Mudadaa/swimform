@@ -59,8 +59,17 @@ main{
 }
 .formul{
     justify-content: flex-start;
+    margin-top: 4%;
+    border: red dotted 2px;
+}
+.form-formul{
     display: grid;
-    grid-template-columns: 20% 25% 15%;
+    border: orange solid 2px;
+    grid-template-columns: 40% 35% 25%;
+}
+label{
+    color: var(--azure);
+    font-weight: bold;
 }
 .nageur{
 justify-content: flex-end;
