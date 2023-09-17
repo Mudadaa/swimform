@@ -10,7 +10,12 @@ const app = {
       // on donne en paramètre les noms des régions à la fonction createRegionOptions
       this.createRegionOptions(regionNames);
       console.log(regionNames);
-        this.takelakes();
+      // on fait pareil mais pour les lacs
+        const lacsData = await this.takelakes();
+        const lacNames = lacsData.map(lac => lac.nom);
+        const lacRegion = lacsData.map(lac => lac.region);
+        console.log(lacRegion);
+        this.createLacOptions(lacNames);
     },
   
     fetchRegions: async function () {
@@ -35,11 +40,21 @@ const app = {
       }
     },
 
-    takelakes: function(){
-        
-           const response=  fetch('./lacs.json');
+    takelakes: async function(){
+        //on récupère les données des lacs du JSON
+        //lien internet https://www.campingsluxe.fr/blog/top-20-plus-beaux-lacs-de-france
+           const response= await fetch('./lacs.json', {
+            method: 'GET',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            },
+            });
            if (response.ok){
-                const dataLake = response.json();
+                const lacsData = await response.json();
+                console.log(lacsData);
+                return lacsData;
+                
         } else  {
             throw new Error(`Erreur HTTP: ${response.status} - ${response.statusText}`);
             
@@ -53,7 +68,17 @@ const app = {
         const option = document.createElement('option');
         option.textContent = regionNames[i];
         regionsSelect.appendChild(option);
-      }
+      }},
+
+      createLacOptions: function (lacNames) {
+        const lacsSelect = document.getElementById('lacs');
+    
+        for (let i = 0; i < lacNames.length; i++) {
+          const option = document.createElement('option');
+          const lacOptions=option.textContent ;
+          lacOptions= lacNames[i].filter(this.regionNames=> this.regionNames=== this.lacRegion);
+         lacsSelect.appendChild(lacOptions);
+        }
     },
 
 

@@ -6,13 +6,13 @@
     },
     {
         "id":"2",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Sainte Croix",
+        "region":"Provence-Alpes-Côte d'Azur"
     },
     {
         "id":"3",
-        "nom":"",
-        "region":""
+        "nom":"Lac du Salagou",
+        "region":"Occitanie"
     },
     {
         "id":"4",
@@ -21,18 +21,18 @@
     },
     {
         "id":"5",
-        "nom":"",
-        "region":""
+        "nom":"Lac d’Oô",
+        "region":"Occitanie"
     },
     {
         "id":"6",
-        "nom":"",
-        "region":""
+        "nom":"Lac du Der",
+        "region":"Grand Est"
     },
     {
         "id":"7",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Castillon",
+        "region":"Provence-Alpes-Côte d'Azur"
     },
     {
         "id":"8",
@@ -40,38 +40,38 @@
         "region":"Auvergne-Rhône-Alpes"
     }, {
         "id":"9",
-        "nom":"",
-        "region":""
+        "nom":"Lac d’Allos",
+        "region":"Provence-Alpes-Côte d'Azur"
     },
     {
         "id":"10",
-        "nom":"",
-        "region":""
+        "nom":"Lac des Settons",
+        "region":"Bourgogne-Franche-Comté"
     },
     {
         "id":"11",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Serre-Ponçon",
+        "region":"Provence-Alpes-Côte d'Azur"
     },
     {
         "id":"12",
-        "nom":"",
-        "region":""
+        "nom":"Grand Lac de Clairvaux",
+        "region":"Bourgogne-Franche-Comté"
     }, 
     {
         "id":"13",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Guéry",
+        "region":"Auvergne-Rhône-Alpes"
     },
     {
         "id":"14",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Guerlédan",
+        "region":"Bretagne"
     },
     {
         "id":"15",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Gérardmer",
+        "region":"Grand Est"
     },
     {
         "id":"16",
@@ -85,13 +85,13 @@
     },
     {
         "id":"18",
-        "nom":"",
-        "region":""
+        "nom":"Lac de Pareloup",
+        "region":"Occitanie"
     },
     {
         "id":"19",
-        "nom":"",
-        "region":""
+        "nom":"Lac Pavin",
+        "region":" Auvergne-Rhône-Alpes"
     },
     {
         "id":"20",
