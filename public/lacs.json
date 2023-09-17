@@ -1,0 +1,101 @@
+[
+    {
+        "id":"1",
+        "nom":"Lac d’Annecy",
+        "region":"Auvergne-Rhône-Alpes"
+    },
+    {
+        "id":"2",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"3",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"4",
+        "nom":"Lac Léman",
+        "region":"Auvergne-Rhône-Alpes"
+    },
+    {
+        "id":"5",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"6",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"7",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"8",
+        "nom":"Lac du Bourget",
+        "region":"Auvergne-Rhône-Alpes"
+    }, {
+        "id":"9",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"10",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"11",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"12",
+        "nom":"",
+        "region":""
+    }, 
+    {
+        "id":"13",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"14",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"15",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"16",
+        "nom":"Lac de Monteynard-Avignonet",
+        "region":"Auvergne-Rhône-Alpes"
+    },
+    {
+        "id":"17",
+        "nom":"Lacs de Crupillouse",
+        "region":"Auvergne-Rhône-Alpes"
+    },
+    {
+        "id":"18",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"19",
+        "nom":"",
+        "region":""
+    },
+    {
+        "id":"20",
+        "nom":"Lac Vert",
+        "region":"Auvergne-Rhône-Alpes"
+    }
+]
