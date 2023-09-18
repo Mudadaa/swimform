@@ -4,6 +4,12 @@
     --teal:#008080;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Regular.ttf');
+    
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -58,18 +64,38 @@ main{
     margin:5% 0.5%;
 }
 .formul{
+    font-family: Roboto ;
     justify-content: flex-start;
-    margin-top: 4%;
-    border: red dotted 2px;
+    margin:  4% 2%;
+    background-color: gray;
+    border-radius: 4px;
+    width: 65%;
+    height: 50%;
+    box-shadow: 5px 8px 40px rgba(0, 0, 0, 0.753) ;
 }
 .form-formul{
+    font-family: Roboto ;
     display: grid;
-    border: orange solid 2px;
+    
     grid-template-columns: 40% 35% 25%;
+    margin-top: 2%;
 }
 label{
     color: var(--azure);
     font-weight: bold;
+}
+
+label, input, select{
+    font-family: Roboto ;
+    
+    margin: 15px;
+}
+
+#identity{
+    text-transform: capitalize;
+}
+#identity-2{
+    text-transform: uppercase;
 }
 .nageur{
 justify-content: flex-end;
@@ -94,6 +120,6 @@ footer{
     color: var(--azure);
     background-color: var(--grisbleu);
     width: 100%;
-    height: fit-content;
+    height: 10vh;
     
 }

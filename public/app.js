@@ -44,18 +44,23 @@ const app = {
       });
   },
 
-  // Fonction pour récupérer les données des régions depuis une API externe
+  // Fonction asynchrone car on contacte le server et on attend
+  // pour récupérer les données des régions depuis une API externe
   fetchRegions: async function () {
     try {
       const response = await fetch('https://geo.api.gouv.fr/regions', {
         method: 'GET',
+        //on précise qu'on veut du json dans l'en-tête de la requête
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
       });
-
+      console.log(response);
+// avc la console de l'inspecteur on voit que la response a une propriété ok qui peut ê true ou false
+// ici en condition le  (response.ok) tt seul signifie si le ok est "true", on continue
       if (response.ok) {
+        //la méthode json() renvoie la promesse qui contient le corps de la réponse parsée = transformée en JSON car avant c'était du texte ? 
         const data = await response.json();
         return data;
       } else {
