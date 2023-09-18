@@ -63,6 +63,7 @@ const app = {
       if (response.ok) {
         //la méthode json() renvoie la promesse qui contient le corps de la réponse parsée = transformée en JSON car avant c'était du texte ? 
         const data = await response.json();
+        console.log(data);
         return data;
       } else {
         throw new Error(`Erreur HTTP: ${response.status} - ${response.statusText}`);
