@@ -9,11 +9,12 @@ const app = {
   regionNames: [],// Garde les noms des régions
   lacsData: [], // Garde les données des lacs
 
+
 //init regroupe les fonctions qui vont être appelées au chargement de la page
-//le .this permet de faire référence aux fonctions ou aux constantes obtenu dans l'objet app
-// et de les réutiliser 
+
   init: function () {
-   
+   //le .this permet de faire référence aux fonctions ou aux constantes obtenu dans l'objet app
+// et de les réutiliser 
     this.fetchRegions()
     // la méthode fetch est une promesse donc asynchrone d'où le .then
       .then((regionsData) => {

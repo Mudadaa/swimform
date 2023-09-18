@@ -5,7 +5,7 @@ const app=express();
 
 //on renvoit la route vers le fichier index.html 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/accueil.html');
 }   );
 //on sert toutes les ressources présents dans le dossier public
 app.use(express.static('public'));

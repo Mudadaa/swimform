@@ -22,13 +22,60 @@ body{
 
 header{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    width: 100vw;
     height: 20vh;
     margin-top: 5.5%;
-   
+    margin-bottom: 10%;
 }
-
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr ;
+    grid-template-areas:". top ."
+                     ". middle ."
+               "bottomOne . bottomTwo" ;
+    border:25px #008080 solid;
+    justify-content: flex-end;
+   background-color:  gray;
+   border-radius: 100%;
+  height: fit-content;
+    
+}
+.equipement{
+    grid-area: top;
+    width: 80%;
+}
+.sante{
+    grid-area: bottomOne;
+    width: 80%;
+}
+.lacs{
+    grid-area: bottomTwo;
+    width: 80%;
+}
+.rond{
+    scale: 0.3;
+    background-color: black;
+    border-radius:100% ;
+    grid-area: middle;
+    width: 80%;
+}
+.equipement img{
+    border-radius: 50%;
+    height:6rem;
+    border: 0.5px solid black;
+}
+.sante img{
+    border-radius: 50%;
+    height:6rem ;
+    border: 0.5px solid black;
+}
+.lacs img{
+    border: 0.5px solid black;
+    border-radius: 50%;
+    height:6rem ;
+}
 h1{
 margin:3% 20%;
 color: var(--azure);   
@@ -43,6 +90,9 @@ h1:hover{
     scale: 1.1;
 }
 .presentation{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     background:var(--teal);
     padding: 5px 15px;
     border-radius: 5px;
@@ -50,7 +100,8 @@ h1:hover{
     font-weight: 400;
     margin: 0 75px;
     box-shadow: 60px 16px var(--grisbleu);
-    width: fit-content;
+    width: 60vw;
+    height: fit-content;
 }
 .presentation:hover{
     transition: 200ms ease-out;
@@ -76,7 +127,6 @@ main{
 .form-formul{
     font-family: Roboto ;
     display: grid;
-    
     grid-template-columns: 40% 35% 25%;
     margin-top: 2%;
 }
