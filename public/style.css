@@ -44,12 +44,12 @@ nav{ display: flex;
     grid-template-areas:". top ."
                      ". middle ."
                "bottomOne . bottomTwo" ;
-    border:25px #008080 solid;
+    border:10px #008080 solid;
     justify-content: flex-end;
     background-color:  gray;
     border-radius: 100%;
-    height:70% ;
-    width:62% ;
+    height:10rem ;
+    width:10rem ;
     z-index: 1;
     padding-right: 2%;
     
@@ -81,13 +81,13 @@ nav{ display: flex;
         content: '';
         background-color: black;
         position: absolute;
-        background-size: cover;
+        width: 3rem;
         z-index: -1;
         inset: 0;
         border-radius: 50%;
         margin-right: 40%;
         margin-bottom: 20%;
-        width: 105%;
+        animation: sharinRotate ;
     }
     .sante ::after{
         content: '';
@@ -99,10 +99,11 @@ nav{ display: flex;
         border-radius: 50%;
         margin-right: 40%;
         margin-bottom: 20%;
+        width: 2.5rem;
     }
     .lacs ::after{
         content: '';
-       
+        width: 2.5rem;
         background-color: black;
         position: absolute;
         background-size: cover;
@@ -119,6 +120,10 @@ nav{ display: flex;
     border-radius:100% ;
     grid-area: middle;
     width: 80%;
+}
+@keyframes sharinRotate {
+    from {transform: rotate(0deg);}
+    to{translate:20px,rotate(90deg)}
 }
 .equipement img{
     border-radius: 50%;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" id="favicon" href="/img/swimCara.gif" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@1,500&display=swap" rel="stylesheet">
+  <title>SwimForm</title>
+</head>
+
+<body>
+  <header>
+
+    <section class="presentation">
+      <h1>Alors on nage ou bien ?</h1>
+      <p>En petit groupe, ou en solo venez découvrir d'autres régions et leurs lacs.</p>
+      <p>Les joies de la nage en eau libre vous attendent.</p>
+      <p>Pensez à prendre votre matos, et de quoi vous sustentez dans votre sac flottant. Parce que brasser de l'eau ça creuse !</p>
+    </section>
+
+    < <nav>
+      <div class="container-nav">
+        <div class="equipement">
+          <a href="./pages/equipement.html">
+            <img src="/img/equipements/masqueSnorkling.webp" hidden alt="" width="100%">
+          </a>
+        </div>
+        <div class="rond"></div>
+        <div class="sante">
+          <a href="./pages/sante.html">
+            <img src="/img/sante/santeBenefsans.jpg" hidden alt="" width="100%">
+          </a>
+        </div>
+        <div class="lacs">
+          <a href="./pages/lacs.html">
+            <img src="/img/lacs/mountain_lake.jpg" hidden width="100%">
+          </a>
+        </div>
+      </div>
+      </nav>
+
+  </header>
+
+  <main>
+    <div class="formul">
+      <form method="get" class="form-formul">
+        <label for="visiteur">Vous êtes le visiteur !<p> Dites-nous en plus sur vous</p></label>
+        <input type="text" placeholder="Prénom" class="identy" id="identy">
+        <input type="text" placeholder="NOM" class="identy" id="identy-2">
+        <label for="region-and-lakes">
+          <p>Choix de la Région et du Lac</p>
+
+        </label>
+        <select name="regions" id="regions">
+          <option value="blank">----Choisissez une Région----</option>
+          <% for( let index = 0; index < regionsNames.length; index++ ) { %>
+          <option value="<%= regionsNames[index]%>"><%=regionsNames[index]%></option>
+          <% } %>
+        </select>
+
+        <select name="lakes" id="lacs">
+          <option value="Lakes">-----Choisissez un Lac-----</option>
+
+        </select>
+        <input type="date" name="" id="dispo">
+        <input type="submit" value="Envoyer">
+      </form>
+    </div>
+    <div class="nageur">
+      <img class="nageurLac" src="/img/nageurLac.JPG" alt="">
+    </div>
+  </main>
+
+  <footer>
+    <div class="copy">
+      <h2> © SwimForm. Tous droits réservés.</h2>
+    </div>
+  </footer>
+
+</body>
+
+</html>
